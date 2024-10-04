@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-03 11:03:52 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUNHODQ1Rks7MjAyNC0xMC0wMzsxMDo1MToyMCBQTTszMjg0"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUNHODQ1Rks7MjAyNC0xMC0wMzsxMTowMzo1MiBQTTsxOzMzOTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Integer" array="False" size=""/>
+            <input variable="radius"/>
+            <declare name="area" type="Integer" array="False" size=""/>
+            <assign variable="area" expression="3.174 * radius * radius"/>
+            <declare name="perimeter" type="Integer" array="False" size=""/>
+            <assign variable="perimeter" expression="2*3.174*radius"/>
+            <output expression="area" newline="True"/>
+            <output expression="perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
