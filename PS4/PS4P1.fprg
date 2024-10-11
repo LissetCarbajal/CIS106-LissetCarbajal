@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-10 07:47:50 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLU05MkpCT1A7MjAyNC0xMC0xMDswNzozODozMyBQTTszMzM2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLU05MkpCT1A7MjAyNC0xMC0xMDswNzo0Nzo1MCBQTTsxOzM0NDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Exam1, Exam2" type="Integer" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="Exam1"/>
+            <input variable="Exam2"/>
+            <assign variable="total" expression="Exam1*0.6+Exam2*0.4"/>
+            <output expression="&quot;Your total is &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
