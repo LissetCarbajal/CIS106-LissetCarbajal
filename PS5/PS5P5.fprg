@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 12:31:18 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLURJUlU1TjA7MjAyNC0xMC0xODsxMTo1ODo1OSBBTTszMzM4"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLURJUlU1TjA7MjAyNC0xMC0xODsxMjozMToxOCBQTTsxOzM0NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <input variable="lastname"/>
+            <declare name="numberofdependents" type="Integer" array="False" size=""/>
+            <input variable="numberofdependents"/>
+            <declare name="grossincome" type="Real" array="False" size=""/>
+            <input variable="grossincome"/>
+            <declare name="adjustedgrossincome" type="Real" array="False" size=""/>
+            <assign variable="adjustedgrossincome" expression="grossincome-numberofdependents*12000"/>
+            <if expression="50000&gt;=50000">
+                <then>
+                    <declare name="taxrate" type="Real" array="False" size=""/>
+                    <assign variable="taxrate" expression="adjustedgrossincome*0.20"/>
+                    <declare name="incometax" type="Real" array="False" size=""/>
+                    <assign variable="incometax" expression="adjustedgrossincome*taxrate"/>
+                    <if expression="0&lt;0">
+                        <then>
+                            <assign variable="incometax" expression="100"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <output expression="lastname" newline="True"/>
+                    <output expression="grossincome" newline="True"/>
+                    <output expression="numberofdependents" newline="True"/>
+                    <output expression="adjustedgrossincome" newline="True"/>
+                    <output expression="incometax" newline="True"/>
+                </then>
+                <else>
+                    <declare name="taxrate" type="Real" array="False" size=""/>
+                    <assign variable="taxrate" expression="adjustedgrossincome*0.10"/>
+                    <declare name="incometax" type="Real" array="False" size=""/>
+                    <assign variable="incometax" expression="adjustedgrossincome*taxrate"/>
+                    <if expression="0&lt;0">
+                        <then>
+                            <assign variable="incometax" expression="100"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <output expression="lastname" newline="True"/>
+                    <output expression="grossincome" newline="True"/>
+                    <output expression="numberofdependents" newline="True"/>
+                    <output expression="adjustedgrossincome" newline="True"/>
+                    <output expression="incometax" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
