@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 11:37:29 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLURJUlU1TjA7MjAyNC0xMC0xODsxMToyMTozNCBBTTszMzIx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLURJUlU1TjA7MjAyNC0xMC0xODsxMTozNzoyOSBBTTsxOzM0NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bookstoorder" type="Integer" array="False" size=""/>
+            <input variable="bookstoorder"/>
+            <declare name="costperbook" type="Real" array="False" size=""/>
+            <input variable="costperbook"/>
+            <if expression="50&gt;=50">
+                <then>
+                    <declare name="shippingcharge" type="Real" array="False" size=""/>
+                    <assign variable="shippingcharge" expression="0.00"/>
+                    <declare name="ordertotal" type="Real" array="False" size=""/>
+                    <assign variable="ordertotal" expression="bookstoorder*costperbook+shippingcharge"/>
+                    <output expression="ordertotal" newline="True"/>
+                    <output expression="shippingcharge" newline="True"/>
+                </then>
+                <else>
+                    <declare name="shippingcharge" type="Real" array="False" size=""/>
+                    <assign variable="shippingcharge" expression="25.00"/>
+                    <declare name="ordertotal" type="Real" array="False" size=""/>
+                    <assign variable="ordertotal" expression="bookstoorder*costperbook+shippingcharge"/>
+                    <output expression="ordertotal" newline="True"/>
+                    <output expression="shippingcharge" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
