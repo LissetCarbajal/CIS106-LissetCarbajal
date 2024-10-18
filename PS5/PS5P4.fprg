@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 11:57:54 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLURJUlU1TjA7MjAyNC0xMC0xODsxMTozOToxNyBBTTszMzMx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLURJUlU1TjA7MjAyNC0xMC0xODsxMTo1Nzo1NCBBTTsxOzM0NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="appliancename" type="String" array="False" size=""/>
+            <input variable="appliancename"/>
+            <declare name="appliancecost" type="Real" array="False" size=""/>
+            <input variable="appliancecost"/>
+            <if expression="1000&gt;=1000">
+                <then>
+                    <declare name="warrantee" type="Real" array="False" size=""/>
+                    <assign variable="warrantee" expression="appliancecost*0.10"/>
+                    <declare name="total" type="Real" array="False" size=""/>
+                    <assign variable="total" expression="appliancecost+warrantee"/>
+                    <output expression="appliancename" newline="True"/>
+                    <output expression="appliancecost" newline="True"/>
+                    <output expression="warrantee" newline="True"/>
+                    <output expression="total" newline="True"/>
+                </then>
+                <else>
+                    <declare name="warrantee" type="Real" array="False" size=""/>
+                    <assign variable="warrantee" expression="appliancecost*0.05"/>
+                    <declare name="total" type="Real" array="False" size=""/>
+                    <assign variable="total" expression="appliancecost+warrantee"/>
+                    <output expression="appliancename" newline="True"/>
+                    <output expression="appliancecost" newline="True"/>
+                    <output expression="warrantee" newline="True"/>
+                    <output expression="total" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
