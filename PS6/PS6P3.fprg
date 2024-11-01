@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-01 01:21:37 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxMSFNWQkQ7MjAyNC0xMS0wMTswMTowMTowNCBQTTszMzYz"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxMSFNWQkQ7MjAyNC0xMS0wMTswMToyMTozNyBQTTsxOzM0Nzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <declare name="loop" type="String" array="False" size=""/>
+            <input variable="loop"/>
+            <assign variable="counter" expression="0"/>
+            <while expression="loop==&quot;Yes&quot;">
+                <input variable="name"/>
+                <input variable="midterm"/>
+                <input variable="final"/>
+                <assign variable="average" expression="(midterm+final)*2"/>
+                <output expression="name &amp; average" newline="True"/>
+                <assign variable="counter" expression="counter+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
