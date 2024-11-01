@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-01 05:11:59 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVVWQjlUSDU7MjAyNC0xMS0wMTswNDo0NTowNSBQTTszMzUx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVVWQjlUSDU7MjAyNC0xMS0wMTswNToxMTo1OSBQTTsxOzM0NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop" type="String" array="False" size=""/>
+            <input variable="loop"/>
+            <while expression="loop==&quot;yes&quot;">
+                <declare name="lastname" type="String" array="False" size=""/>
+                <input variable="lastname"/>
+                <declare name="hoursworked" type="Real" array="False" size=""/>
+                <input variable="hoursworked"/>
+                <declare name="rateofpay" type="Real" array="False" size=""/>
+                <input variable="rateofpay"/>
+                <declare name="overtime" type="Real" array="False" size=""/>
+                <declare name="grosspay" type="Real" array="False" size=""/>
+                <assign variable="grosspay" expression="hoursworked*rateofpay"/>
+                <assign variable="grosspay" expression="hoursworked*rateofpay"/>
+                <output expression="lastname &amp; grosspay" newline="True"/>
+                <assign variable="overtime" expression="1.5*rateofpay*hoursworked"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
